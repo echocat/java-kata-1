@@ -1,0 +1,51 @@
+### General
+out/
+build/
+tmp/
+var/
+*.tmp
+*.bak
+
+### Java
+hs_err_pid*
+
+### Maven
+target/
+
+### Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+### macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### JetBrains
+# User-specific stuff:
+.idea
+*.iws
+*.ipr
+.idea_modules/
+atlassian-ide-plugin.xml
+DerivedData/
+
+### Eclipse
+.metadata
+bin/
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.factorypath
