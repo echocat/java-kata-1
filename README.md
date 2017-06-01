@@ -7,6 +7,7 @@ Code kata in Java where you have to write a library of books and magazines.
 * [Topic](#topic)
 * [Frame conditions](#frame-conditions)
 * [Tasks](#tasks)
+* [Procedure](#procedure)
 * [License](#license)
 
 ## Topic
