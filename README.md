@@ -74,6 +74,37 @@ You have to implement an abstracted and simple library system.
 
 3. Add a book and a magazine to the data structure of your software and export it to a new CSV files.
 
+## Procedure
+
+1. Get the code. There are several ways for it:
+
+   1. With fork (makes it possible to preserve your work):
+      1. [Fork this repository](https://github.com/echocat/java-kata-1/fork)
+      2. Clone this fork to your computer:
+         ```bash
+         git clone <your github url>
+         # Example: git clone https://github.com/blaubaer/java-kata-1.git
+         ```
+
+   2. Clone this repository with local branch:
+      ```bash
+      git clone https://github.com/echocat/java-kata-1.git
+      git checkout -b run-<yourname>-<iteration number> 
+      # Example: git checkout -b run-blaubaer-1
+      ```
+
+   3. Just download it from [here](https://github.com/echocat/java-kata-1/archive/master.zip)
+
+2. Open in your favorite IDE.
+
+   > **Hint**: We recommend [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea).
+
+3. Start the kata.
+
+4. Discuss with your friends and/or colleges your solution.
+
+5. Repeat after some days/weeks.
+
 ## License
 
 See [LICENSE](LICENSE) file.
