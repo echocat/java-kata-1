@@ -1,15 +1,16 @@
 package org.echocat.kata.java.part1.model;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
 public class Publication implements PublicationIF {
 
   private String isbn;
   private String title;
+  private Set<String> authorEmails;
   private Set<Author> authors;
 
   public String getIsbn() {
@@ -28,16 +29,27 @@ public class Publication implements PublicationIF {
     this.title = title;
   }
 
+  public void addAuthor(Author author) {
+    if (authors == null) {
+      authors = new HashSet<>();
+    }
+    authors.add(author);
+  }
+
+  public void setAuthorEmails(String[] authorEmails) {
+    this.authorEmails = Arrays.stream(authorEmails).collect(Collectors.toSet());
+  }
+
+  public Set<String> getAuthorEmails() {
+    return authorEmails;
+  }
+
   public Set<Author> getAuthors() {
     return authors;
   }
 
   public void setAuthors(Set<Author> authors) {
     this.authors = authors;
-  }
-
-  public void setAuthorEmails(String[] authorEmails) {
-    this.authors = Arrays.stream(authorEmails).map(Author::new).collect(Collectors.toSet());
   }
 
   @Override
@@ -60,13 +72,4 @@ public class Publication implements PublicationIF {
     return Objects.hash(isbn);
   }
 
-  @Override
-  public String toString() {
-    return new StringJoiner(", ", Publication.class.getSimpleName() + "[", "]")
-        .add("isbn='" + isbn + "'")
-        .add("title='" + title + "'")
-        .add("authors=" + authors)
-        .add("\n")
-        .toString();
-  }
 }

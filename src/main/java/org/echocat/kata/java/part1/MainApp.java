@@ -8,11 +8,19 @@ public class MainApp {
   public static void main(String[] args) {
 
     System.out.println("print publications");
-    System.out.println(libraryService.getPublications());
+    libraryService.getPublications().forEach(System.out::println);
 
     System.out.println("\n");
     System.out.println("print publications sorted by title");
-    System.out.println(libraryService.getPublications());
+    libraryService.getPulicationsSortedByTitle().forEach(System.out::println);
+
+    System.out.println("\n");
+    System.out.println("find publication by authors email: null-mueller@echocat.org");
+    libraryService.findPublicationByAuthorEmail("null-mueller@echocat.org").forEach(System.out::println);
+
+    System.out.println("\n");
+    System.out.println("find publication by isbn: 5454-5587-3210");
+    libraryService.findPublicationByIsbn("5454-5587-3210").forEach(System.out::println);
   }
 
   protected static String getHelloWorldText() {

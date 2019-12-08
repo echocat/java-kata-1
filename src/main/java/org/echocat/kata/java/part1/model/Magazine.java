@@ -17,11 +17,11 @@ public class Magazine extends Publication {
 
   @Override
   public String toString() {
-    return new StringJoiner(", ", Book.class.getSimpleName() + "[", "]")
+    return new StringJoiner(", ", Magazine.class.getSimpleName() + "[", "]")
         .add("isbn='" + super.getIsbn() + "'")
         .add("title='" + super.getTitle() + "'")
         .add("publishedAt='" + publishedAt + "'")
-        .add("authors=" + super.getAuthors())
+        .add("authors=" + (super.getAuthors() == null ? super.getAuthorEmails() : super.getAuthors()) + "]")
         .toString();
   }
 }

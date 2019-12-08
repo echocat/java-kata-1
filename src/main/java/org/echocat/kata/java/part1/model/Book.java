@@ -20,7 +20,7 @@ public class Book extends Publication {
         .add("isbn='" + super.getIsbn() + "'")
         .add("title='" + super.getTitle() + "'")
         .add("description='" + description + "'")
-        .add("authors=" + super.getAuthors())
+        .add("authors=" + (super.getAuthors() == null ? super.getAuthorEmails() : super.getAuthors()) + "]")
         .toString();
   }
 }

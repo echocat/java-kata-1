@@ -10,7 +10,6 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import org.echocat.kata.java.part1.model.Author;
-import org.echocat.kata.java.part1.model.Magazine;
 
 public class AuthorCsvReader {
 
