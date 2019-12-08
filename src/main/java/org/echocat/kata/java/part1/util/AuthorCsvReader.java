@@ -10,8 +10,16 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import org.echocat.kata.java.part1.model.Author;
+import org.echocat.kata.java.part1.model.Magazine;
 
 public class AuthorCsvReader {
+
+  public static final String DEFAULT_REPOSITORY = "/org/echocat/kata/java/part1/data/authors.csv";
+
+
+  public static Set<Author> readAuthors() {
+    return readAuthors(DEFAULT_REPOSITORY);
+  }
 
   public static Set<Author> readAuthors(String authorsCsvFile) {
 

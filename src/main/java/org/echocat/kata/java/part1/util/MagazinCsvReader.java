@@ -17,7 +17,12 @@ import org.echocat.kata.java.part1.model.Magazine;
 public class MagazinCsvReader {
 
   static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd.MM.yyyy").withLocale(Locale.GERMANY);
+  public static final String DEFAULT_REPOSITORY = "/org/echocat/kata/java/part1/data/magazines.csv";
 
+
+  public static Set<Magazine> readManazines() {
+    return readManazines(DEFAULT_REPOSITORY);
+  }
 
   public static Set<Magazine> readManazines(String magazineCsvFile) {
 

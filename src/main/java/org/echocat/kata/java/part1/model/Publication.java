@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
-public abstract class Publication implements PublicationIF {
+public class Publication implements PublicationIF {
 
   private String isbn;
   private String title;
@@ -66,6 +66,7 @@ public abstract class Publication implements PublicationIF {
         .add("isbn='" + isbn + "'")
         .add("title='" + title + "'")
         .add("authors=" + authors)
+        .add("\n")
         .toString();
   }
 }

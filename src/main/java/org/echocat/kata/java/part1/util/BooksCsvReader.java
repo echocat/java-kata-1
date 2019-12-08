@@ -13,6 +13,12 @@ import org.echocat.kata.java.part1.model.Book;
 
 public class BooksCsvReader {
 
+  public static final String DEFAULT_REPOSITORY = "/org/echocat/kata/java/part1/data/books.csv";
+
+
+  public static Set<Book> readBooks() {
+    return readBooks(DEFAULT_REPOSITORY);
+  }
 
   public static Set<Book> readBooks(String booksCsvFile) {
 
