@@ -40,9 +40,9 @@ You have to implement an abstracted and simple library system.
 
    > **Hint:** There is a reason why there are so many books and authors in german with [umlauts](https://en.wikipedia.org/wiki/Germanic_umlaut).
 
-   * [`authors.csv`](src/main/resources/org/echocat/kata/java/part1/data/authors.csv): Contains authors with its `email`, `firstName` and `lastName`.
-   * [`books.csv`](src/main/resources/org/echocat/kata/java/part1/data/books.csv): Contains books with its `title`, `description`, one or more `authors` and an `isbn`.
-   * [`magazines.csv`](src/main/resources/org/echocat/kata/java/part1/data/magazines.csv): Contains magazines with its `title`, one or more `authors`, a `publishedAt` and an `isbn`.
+   * [`authors.csv`](src/main/resources/authors.csv): Contains authors with its `email`, `firstName` and `lastName`.
+   * [`books.csv`](src/main/resources/books.csv): Contains books with its `title`, `description`, one or more `authors` and an `isbn`.
+   * [`magazines.csv`](src/main/resources/magazines.csv): Contains magazines with its `title`, one or more `authors`, a `publishedAt` and an `isbn`.
 
 ## Tasks
 

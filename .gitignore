@@ -37,6 +37,7 @@ Temporary Items
 .idea_modules/
 atlassian-ide-plugin.xml
 DerivedData/
+*.iml
 
 ### Eclipse
 .metadata
