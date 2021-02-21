@@ -7,7 +7,7 @@
 
     <groupId>org.echocat.kata</groupId>
     <artifactId>java-kata-1</artifactId>
-    <version>1-SNAPSHOT</version>
+    <version>2-SNAPSHOT</version>
 
     <properties>
         <java.version>14</java.version>
