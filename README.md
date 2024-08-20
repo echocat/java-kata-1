@@ -33,7 +33,7 @@ You have to implement an abstracted and simple library system.
 
 5. Keep the following priorities in mind while you implementing - in the mentioned order:
    1. Code quality
-   2. Usage of object oriented methods
+   2. Usage of object-oriented methods
    3. Functionality
 
 6. Given resources:

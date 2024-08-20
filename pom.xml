@@ -10,9 +10,8 @@
     <version>1-SNAPSHOT</version>
 
     <properties>
-        <java.version>14</java.version>
-        <maven.compiler.source>${java.version}</maven.compiler.source>
-        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <java.version>17</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ssX</maven.build.timestamp.format>
     </properties>
@@ -22,19 +21,19 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>1.10.3</version>
+            <version>1.11.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.10.3</version>
+            <version>5.11.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
-            <version>5.10.3</version>
+            <version>5.11.0</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
