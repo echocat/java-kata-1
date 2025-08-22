@@ -1,15 +1,14 @@
 package org.echocat.kata.java.part1;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.junit.jupiter.api.Test;
 
 public class MainAppUnitTest {
 
     @Test
     public void testGetHelloWorldText() {
-        assertThat(MainApp.getHelloWorldText(), is("Hello world!"));
+        assertEquals("Hello world!", MainApp.getHelloWorldText());
     }
 
 }
